@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donation DApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dapp-container">
+    <div class="image-panel">
+      <div class="tagline">
+        <h2>We Can<br>Save The<br>Future</h2>
+      </div>
+    </div>
+
+    <div class="form-panel">
+      <div class="logo"><span>Kindle</span><strong>Chain</strong></div>
+      <p class="description">Welcome to KindleChain donation — let your kindness ripple through the chain of change.</p>
+
+      <form id="donationForm">
+        <label for="amount">Enter Donation Amount (in ETH)</label>
+        <input type="text" id="amount" placeholder="e.g., 0.01" required />
+
+        <button type="submit" class="submit-btn">Donate</button>
+      </form>
+
+      <div class="wallet-info">
+        <p id="account">Connecting wallet...</p>
+        <p id="balance"></p>
+      </div>
+
+      <h3>Donation History</h3>
+      <table id="donationsTable">
+        <thead>
+          <tr>
+            <th>Donor</th>
+            <th>Amount</th>
+            <th>Transaction</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

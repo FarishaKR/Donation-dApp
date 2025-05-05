@@ -1,0 +1,13 @@
+{
+  "name": "donation-dapp",
+  "version": "1.0.0",
+  "description": "Decentralized Donation DApp",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
+
